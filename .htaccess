@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+  #Activate rewrite
+  RewriteEngine on
+
+  RewriteCond %{SCRIPT_FILENAME} !-d
+  RewriteCond %{SCRIPT_FILENAME} !-f
+
+  RewriteRule ^(.*)/(.*) app.php?controller=$1&action=$2
+  RewriteRule ^recipient views/document/set_recipient.php
+  RewriteRule ^create_concept views/concepto/create_concept.php
+  RewriteRule ^print print_pdf.php
+  RewriteRule ^download download_pdf.php
+  RewriteRule ^app app.php
+  RewriteRule ^index index.php
+  RewriteRule ^register views/user/register.php
+  RewriteRule ^crear_concepto views/concepto/create_concept.php
+  RewriteRule ^access views/user/login_form.php
+</IfModule>
+<IfModule mod_mime_magic>
+  MimeMagicFile conf/magic
+</IfModule>

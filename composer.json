@@ -1,0 +1,27 @@
+{
+    "name": "dario/presupuestos",
+    "description": "Genera presupuestos de obra",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dario Hernandez",
+            "email": "ledario.hernandez@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DBManager\\": ["DBManager/", "config/"],
+            "Models\\": "models/",
+            "Helpers\\": "helpers/",
+            "Controllers\\": "controllers/"
+        }
+    },
+
+    "minimum-stability": "dev",
+    "require": {
+        "spipu/html2pdf": "dev-master",
+        "swiftmailer/swiftmailer": "^6.0",
+        "phpmailer/phpmailer": "dev-master"
+    }
+}

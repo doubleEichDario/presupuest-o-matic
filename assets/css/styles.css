@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+
+
+h1 {
+    font-size: 1.8rem !important;
+}
+
+.block { display: block !important; }
+.centered { text-align: center; }
+
+.nav-wrapper {
+    background-color: #385170;
+    color: #fff;
+}
+
+nav .brand-logo {
+    color: inherit !important;
+    padding-left: 20px !important;
+    font-size: 25px !important;
+    text-rendering: optimizeLegibility
+}
+
+.nav-link li a, .nav-link li a span {
+    color: inherit !important;
+    text-rendering: optimizeLegibility;
+}
+
+.nav-link li a i {
+    display: inline-block;
+}
+
+.nav-link li a i+span {
+    vertical-align: super !important;
+    margin-left: 8px;
+}
+
+.featured-color-btn {
+    background-color: #142d4c !important;
+}
